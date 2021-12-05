@@ -22,24 +22,37 @@
         background-color: #eaeaea;
         margin: 0;
       }
-      ol {
-        border-bottom: 2px solid gray;
+      #grid ol {
+        border-right: 2px solid gray;
         margin: 0;
-        padding: 30px;
+        padding: 20px;
+        width: 240px;
+        padding-left: 45px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 310px 1fr;
+      }
+      #article {
+        padding-left: 30px;
       }
     </style>
   </head>
   <body>
     <h1><a href="index.html" style="color: black">ENGLISH</a></h1>
-    <ol type="1" start="7">
-      <li><a href="7a.html">A CROWD IN HARMONY</a></li>
-      <li><a href="8a.html">WHO KILLED THE EMPEROR</a></li>
-      <li><a href="9b.html">LURE OF THE LOST CITY</a></li>
-      <li><a href="10a.html">LIVING LONGER</a></li>
-      <li><a href="11b.html">TECHNOLOGY AS TRASH</a></li>
-      <li><a href="12a.html">PLANET HUNTERS</a></li>
-    </ol>
-    <h2>ENGLISH</h2>
-    <p>영어1 공부용 사이트</p>
+    <div id="grid">
+      <ol type="1" start="7">
+        <li><a href="7a.html">A CROWD IN HARMONY</a></li>
+        <li><a href="8a.html">WHO KILLED THE EMPEROR</a></li>
+        <li><a href="9b.html">LURE OF THE LOST CITY</a></li>
+        <li><a href="10a.html">LIVING LONGER</a></li>
+        <li><a href="11b.html">TECHNOLOGY AS TRASH</a></li>
+        <li><a href="12a.html">PLANET HUNTERS</a></li>
+      </ol>
+      <div id="article">
+        <h2>ENGLISH</h2>
+        <p>영어1 공부용 사이트</p>
+      </div>
+    </div>
   </body>
 </html>
